@@ -1,0 +1,27 @@
+function numCheck(num) {
+    let result = [];
+    for (let i = 1; i <= num; i++) {
+        if (i % 2 === 0) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                result.push("yu-gi-oh")
+            } else if (i % 3 === 0) {
+               result.push("yu-gi")
+            } else if (i % 5 === 0) {
+               result.push("yu-oh")
+            } else {
+               result.push("yu")
+            }
+        } else if (i % 3 === 0) {
+            result.push("gi")
+        } else if (i % 5 === 0) {
+            result.push("oh")
+        } else {
+            result.push(i)
+        }
+        
+    }
+      console.log(result);
+     return result;
+}
+
+numCheck(60);
